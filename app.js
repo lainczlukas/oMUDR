@@ -69,9 +69,8 @@ async function loadQuestions() {
 
 /**
  * Displays an error message to the user
- * @param {string} message - Error message to display
  */
-function showError(message) {
+function showError() {
     elements.questionText.textContent = 'Nepodarilo sa načítať otázky. Obnovte stránku prosím.';
     elements.categoryBadge.textContent = 'Chyba';
     elements.categoryBadge.className = 'inline-block bg-gradient-to-r from-red-400 to-pink-500 text-white text-sm font-bold px-6 py-2 rounded-full shadow-md';
@@ -199,7 +198,8 @@ function createAnswerElement(answer) {
     div.dataset.answerId = answer.id;
 
     const label = document.createElement('label');
-    label.className = 'flex items-start cursor-pointer';
+    label.className = 'flex items-start cursor-pointer w-full';
+    label.htmlFor = `answer-${answer.id}`;
 
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
@@ -216,11 +216,17 @@ function createAnswerElement(answer) {
     label.appendChild(span);
     div.appendChild(label);
 
-    // Allow clicking anywhere on the div to toggle checkbox
+    // Make the entire div clickable by triggering the label click
     div.addEventListener('click', (e) => {
-        if (e.target !== checkbox && !state.isAnswerSubmitted) {
+        if (!state.isAnswerSubmitted) {
             checkbox.checked = !checkbox.checked;
+            e.preventDefault();
         }
+    });
+
+    // Prevent double-toggle when clicking directly on checkbox or label
+    checkbox.addEventListener('click', (e) => {
+        e.stopPropagation();
     });
 
     return div;
