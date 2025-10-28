@@ -2,425 +2,425 @@
   "categories": [
     {
       "id": 1,
-      "name": "Anatomy"
+      "name": "Anatómia"
     },
     {
       "id": 2,
-      "name": "Physiology"
+      "name": "Fyziológia"
     },
     {
       "id": 3,
-      "name": "Biochemistry"
+      "name": "Biochémia"
     },
     {
       "id": 4,
-      "name": "Pharmacology"
+      "name": "Farmakológia"
     },
     {
       "id": 5,
-      "name": "Pathology"
+      "name": "Patológia"
     }
   ],
   "questions": [
     {
       "id": 1,
-      "text": "Which of the following structures are part of the human brain?",
+      "text": "Ktoré z nasledujúcich štruktúr sú súčasťou ľudského mozgu?",
       "categoryId": 1,
       "answers": [
         {
           "id": 1,
-          "text": "Cerebrum",
+          "text": "Cerebrum (veľký mozog)",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Cerebellum",
+          "text": "Cerebellum (malý mozog)",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Liver",
+          "text": "Pečeň",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Medulla oblongata",
+          "text": "Predĺžená miecha",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Kidney",
+          "text": "Obličky",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Pons",
+          "text": "Pons (Most)",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Spleen",
+          "text": "Slezina",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Thalamus",
+          "text": "Talamus",
           "isCorrect": true
         }
       ]
     },
     {
       "id": 2,
-      "text": "Which bones are part of the human cranium?",
+      "text": "Ktoré kosti sú súčasťou lebečnej klenby?",
       "categoryId": 1,
       "answers": [
         {
           "id": 1,
-          "text": "Frontal bone",
+          "text": "Čelová kosť",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Parietal bone",
+          "text": "Temenná kosť",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Femur",
+          "text": "Stehnová kosť",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Occipital bone",
+          "text": "Týlna kosť",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Humerus",
+          "text": "Ramenná kosť",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Temporal bone",
+          "text": "Spánková kosť",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Tibia",
+          "text": "Píšťala",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Radius",
+          "text": "Vretenná kosť",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 3,
-      "text": "Which structures are part of the digestive system?",
+      "text": "Ktoré štruktúry patria do tráviaceho systému?",
       "categoryId": 1,
       "answers": [
         {
           "id": 1,
-          "text": "Esophagus",
+          "text": "Pažerák",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Stomach",
+          "text": "Žalúdok",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Trachea",
+          "text": "Priedušnica",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Small intestine",
+          "text": "Tenké črevo",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Bronchi",
+          "text": "Priedušky",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Pancreas",
+          "text": "Podžalúdková žľaza",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Alveoli",
+          "text": "Pľúcne mechúriky",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Ureter",
+          "text": "Močovod",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 4,
-      "text": "Which structures are part of the cardiac conduction system?",
+      "text": "Ktoré štruktúry sú súčasťou prevodového systému srdca?",
       "categoryId": 1,
       "answers": [
         {
           "id": 1,
-          "text": "Sinoatrial node",
+          "text": "Sinoatriálny uzol (SA uzol)",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Atrioventricular node",
+          "text": "Atrioventrikulárny uzol (AV uzol)",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Thyroid gland",
+          "text": "Štítna žľaza",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Bundle of His",
+          "text": "Hisov zväzok",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Adrenal medulla",
+          "text": "Drene nadobličiek",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Purkinje fibers",
+          "text": "Purkyňove vlákna",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Pituitary gland",
+          "text": "Hypofýza",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Pineal gland",
+          "text": "Epifýza",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 5,
-      "text": "Which physiological processes occur during aerobic respiration?",
+      "text": "Ktoré fyziologické procesy prebiehajú počas aeróbneho dýchania?",
       "categoryId": 2,
       "answers": [
         {
           "id": 1,
-          "text": "Glycolysis",
+          "text": "Glykolýza",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Krebs cycle",
+          "text": "Krebsov cyklus",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Protein synthesis",
+          "text": "Proteosyntéza",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Electron transport chain",
+          "text": "Dýchací reťazec",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "DNA replication",
+          "text": "Replikácia DNA",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Oxidative phosphorylation",
+          "text": "Oxidatívna fosforylácia",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Cell division",
+          "text": "Bunkové delenie",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Phagocytosis",
+          "text": "Fagocytóza",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 6,
-      "text": "Which hormones are secreted by the anterior pituitary gland?",
+      "text": "Ktoré hormóny sú vylučované predným lalokom hypofýzy?",
       "categoryId": 2,
       "answers": [
         {
           "id": 1,
-          "text": "Growth hormone (GH)",
+          "text": "Rastový hormón (GH)",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Thyroid-stimulating hormone (TSH)",
+          "text": "Tyreotropný hormón (TSH)",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Insulin",
+          "text": "Inzulín",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Adrenocorticotropic hormone (ACTH)",
+          "text": "Adrenokortikotropný hormón (ACTH)",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Glucagon",
+          "text": "Glukagón",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Prolactin",
+          "text": "Prolaktín",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Cortisol",
+          "text": "Kortizol",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Adrenaline",
+          "text": "Adrenalín",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 7,
-      "text": "Which factors increase heart rate?",
+      "text": "Ktoré faktory zvyšujú srdcovú frekvenciu?",
       "categoryId": 2,
       "answers": [
         {
           "id": 1,
-          "text": "Sympathetic nervous system activation",
+          "text": "Aktivácia sympatiku",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Epinephrine release",
+          "text": "Uvoľnenie epinefrínu",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Parasympathetic stimulation",
+          "text": "Parasympatická stimulácia",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Exercise",
+          "text": "Fyzická aktivita",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Acetylcholine at SA node",
+          "text": "Acetylcholín na SA uzle",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Increased body temperature",
+          "text": "Zvýšená telesná teplota",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Vagus nerve stimulation",
+          "text": "Stimulácia nervus vagus",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Sleep",
+          "text": "Spánok",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 8,
-      "text": "Which processes occur during muscle contraction?",
+      "text": "Ktoré procesy prebiehajú počas svalovej kontrakcie?",
       "categoryId": 2,
       "answers": [
         {
           "id": 1,
-          "text": "Calcium ions bind to troponin",
+          "text": "Viazanie vápnikových iónov na troponín",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "ATP hydrolysis",
+          "text": "Hydrolýza ATP",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "DNA transcription",
+          "text": "Transkripcia DNA",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Actin-myosin cross-bridge formation",
+          "text": "Tvorba aktín-myozínových mostíkov",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Mitosis",
+          "text": "Mitóza",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Sarcomere shortening",
+          "text": "Skrátenie sarkoméry",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Glycogen synthesis",
+          "text": "Syntéza glykogénu",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Cholesterol production",
+          "text": "Produkcia cholesterolu",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 9,
-      "text": "Which molecules are carbohydrates?",
+      "text": "Ktoré molekuly sú sacharidy?",
       "categoryId": 3,
       "answers": [
         {
           "id": 1,
-          "text": "Glucose",
+          "text": "Glukóza",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Fructose",
+          "text": "Fruktóza",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Hemoglobin",
+          "text": "Hemoglobín",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Glycogen",
+          "text": "Glykogén",
           "isCorrect": true
         },
         {
@@ -430,165 +430,165 @@
         },
         {
           "id": 6,
-          "text": "Lactose",
+          "text": "Laktóza",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Myoglobin",
+          "text": "Myoglobín",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Testosterone",
+          "text": "Testosterón",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 10,
-      "text": "Which enzymes are involved in digestion?",
+      "text": "Ktoré enzýmy sa podieľajú na trávení?",
       "categoryId": 3,
       "answers": [
         {
           "id": 1,
-          "text": "Amylase",
+          "text": "Amyláza",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Pepsin",
+          "text": "Pepsín",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "DNA polymerase",
+          "text": "DNA polymeráza",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Lipase",
+          "text": "Lipáza",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "RNA polymerase",
+          "text": "RNA polymeráza",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Trypsin",
+          "text": "Trypsín",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Helicase",
+          "text": "Helikáza",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Ligase",
+          "text": "Ligáza",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 11,
-      "text": "Which vitamins are fat-soluble?",
+      "text": "Ktoré vitamíny sú rozpustné v tukoch?",
       "categoryId": 3,
       "answers": [
         {
           "id": 1,
-          "text": "Vitamin A",
+          "text": "Vitamín A",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Vitamin D",
+          "text": "Vitamín D",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Vitamin C",
+          "text": "Vitamín C",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Vitamin E",
+          "text": "Vitamín E",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Vitamin B12",
+          "text": "Vitamín B12",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Vitamin K",
+          "text": "Vitamín K",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Thiamine (B1)",
+          "text": "Tiamín (B1)",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Riboflavin (B2)",
+          "text": "Riboflavín (B2)",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 12,
-      "text": "Which amino acids are essential (must be obtained from diet)?",
+      "text": "Ktoré aminokyseliny sú esenciálne (musia sa prijímať v potrave)?",
       "categoryId": 3,
       "answers": [
         {
           "id": 1,
-          "text": "Leucine",
+          "text": "Leucín",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Lysine",
+          "text": "Lyzín",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Alanine",
+          "text": "Alanín",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Methionine",
+          "text": "Metionín",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Glycine",
+          "text": "Glycín",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Tryptophan",
+          "text": "Tryptofán",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Serine",
+          "text": "Serín",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Glutamine",
+          "text": "Glutamín",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 13,
-      "text": "Which medications are beta-blockers?",
+      "text": "Ktoré lieky sú beta-blokátory?",
       "categoryId": 4,
       "answers": [
         {
@@ -613,12 +613,12 @@
         },
         {
           "id": 5,
-          "text": "Amlodipine",
+          "text": "Amlodipin",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Carvedilol",
+          "text": "Karvedilol",
           "isCorrect": true
         },
         {
@@ -628,14 +628,14 @@
         },
         {
           "id": 8,
-          "text": "Hydrochlorothiazide",
+          "text": "Hydrochlorotiazid",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 14,
-      "text": "Which drugs are classified as NSAIDs (Non-Steroidal Anti-Inflammatory Drugs)?",
+      "text": "Ktoré lieky sú nesteroidné protizápalové lieky (NSAIDs)?",
       "categoryId": 4,
       "answers": [
         {
@@ -650,27 +650,27 @@
         },
         {
           "id": 3,
-          "text": "Morphine",
+          "text": "Morfín",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Diclofenac",
+          "text": "Diklofenak",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Codeine",
+          "text": "Kodeín",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Aspirin",
+          "text": "Kyselina acetylsalicylová (Aspirín)",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Acetaminophen",
+          "text": "Paracetamol",
           "isCorrect": false
         },
         {
@@ -682,54 +682,54 @@
     },
     {
       "id": 15,
-      "text": "Which antibiotics belong to the penicillin class?",
+      "text": "Ktoré antibiotiká patria do skupiny penicilínov?",
       "categoryId": 4,
       "answers": [
         {
           "id": 1,
-          "text": "Amoxicillin",
+          "text": "Amoxicilín",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Ampicillin",
+          "text": "Ampicilín",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Ciprofloxacin",
+          "text": "Ciprofloxacín",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Penicillin G",
+          "text": "Penicilín G",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Azithromycin",
+          "text": "Azitromycín",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Nafcillin",
+          "text": "Nafcilín",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Doxycycline",
+          "text": "Doxycyklín",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Vancomycin",
+          "text": "Vankomycín",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 16,
-      "text": "Which medications are ACE inhibitors (Angiotensin-Converting Enzyme inhibitors)?",
+      "text": "Ktoré lieky sú ACE inhibítory?",
       "categoryId": 4,
       "answers": [
         {
@@ -759,7 +759,7 @@
         },
         {
           "id": 6,
-          "text": "Captopril",
+          "text": "Kaptopril",
           "isCorrect": true
         },
         {
@@ -769,66 +769,66 @@
         },
         {
           "id": 8,
-          "text": "Amlodipine",
+          "text": "Amlodipin",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 17,
-      "text": "Which conditions are autoimmune diseases?",
+      "text": "Ktoré ochorenia sú autoimunitné?",
       "categoryId": 5,
       "answers": [
         {
           "id": 1,
-          "text": "Rheumatoid arthritis",
+          "text": "Reumatoidná artritída",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Type 1 diabetes",
+          "text": "Diabetes mellitus 1. typu",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Pneumonia",
+          "text": "Pneumónia",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Multiple sclerosis",
+          "text": "Skleróza multiplex",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Tuberculosis",
+          "text": "Tuberkulóza",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Systemic lupus erythematosus",
+          "text": "Systémový lupus erythematodes",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Influenza",
+          "text": "Chrípka",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Malaria",
+          "text": "Malária",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 18,
-      "text": "Which pathogens are viruses?",
+      "text": "Ktoré patogény sú vírusy?",
       "categoryId": 5,
       "answers": [
         {
           "id": 1,
-          "text": "Influenza virus",
+          "text": "Vírus chrípky",
           "isCorrect": true
         },
         {
@@ -843,7 +843,7 @@
         },
         {
           "id": 4,
-          "text": "Hepatitis B virus",
+          "text": "Vírus hepatitídy B",
           "isCorrect": true
         },
         {
@@ -870,94 +870,94 @@
     },
     {
       "id": 19,
-      "text": "Which findings are characteristic of inflammatory response?",
+      "text": "Ktoré nálezy sú charakteristické pre zápalovú odpoveď?",
       "categoryId": 5,
       "answers": [
         {
           "id": 1,
-          "text": "Increased vascular permeability",
+          "text": "Zvýšená vaskulárna permeabilita",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Vasodilation",
+          "text": "Vazodilatácia",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Decreased blood flow",
+          "text": "Znížený prietok krvi",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Leukocyte migration",
+          "text": "Migrácia leukocytov",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Tissue calcification",
+          "text": "Kalcifikácia tkaniva",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Release of chemical mediators",
+          "text": "Uvoľňovanie chemických mediátorov",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Cell atrophy",
+          "text": "Atrofia buniek",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Fibrosis",
+          "text": "Fibróza",
           "isCorrect": false
         }
       ]
     },
     {
       "id": 20,
-      "text": "Which types of necrosis exist in pathology?",
+      "text": "Ktoré typy nekrózy existujú v patológii?",
       "categoryId": 5,
       "answers": [
         {
           "id": 1,
-          "text": "Coagulative necrosis",
+          "text": "Koagulatívna nekróza",
           "isCorrect": true
         },
         {
           "id": 2,
-          "text": "Liquefactive necrosis",
+          "text": "Likvefakčná nekróza",
           "isCorrect": true
         },
         {
           "id": 3,
-          "text": "Hyperplastic necrosis",
+          "text": "Hyperplastická nekróza",
           "isCorrect": false
         },
         {
           "id": 4,
-          "text": "Caseous necrosis",
+          "text": "Kaseózna nekróza",
           "isCorrect": true
         },
         {
           "id": 5,
-          "text": "Metaplastic necrosis",
+          "text": "Metaplastická nekróza",
           "isCorrect": false
         },
         {
           "id": 6,
-          "text": "Fat necrosis",
+          "text": "Tuková nekróza",
           "isCorrect": true
         },
         {
           "id": 7,
-          "text": "Dysplastic necrosis",
+          "text": "Dysplastická nekróza",
           "isCorrect": false
         },
         {
           "id": 8,
-          "text": "Atrophic necrosis",
+          "text": "Atrofická nekróza",
           "isCorrect": false
         }
       ]

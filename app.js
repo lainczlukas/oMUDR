@@ -72,9 +72,9 @@ async function loadQuestions() {
  * @param {string} message - Error message to display
  */
 function showError(message) {
-    elements.questionText.textContent = message;
-    elements.categoryBadge.textContent = 'Error';
-    elements.categoryBadge.className = 'inline-block bg-red-100 text-red-800 text-sm font-semibold px-4 py-2 rounded-full';
+    elements.questionText.textContent = 'Nepodarilo sa načítať otázky. Obnovte stránku prosím.';
+    elements.categoryBadge.textContent = 'Chyba';
+    elements.categoryBadge.className = 'inline-block bg-gradient-to-r from-red-400 to-pink-500 text-white text-sm font-bold px-6 py-2 rounded-full shadow-md';
     elements.submitBtn.disabled = true;
 }
 
@@ -146,19 +146,38 @@ function displayQuestion(question) {
     state.currentQuestion = question;
     state.isAnswerSubmitted = false;
 
-    // Update category badge
-    const categoryName = getCategoryName(question.categoryId);
-    elements.categoryBadge.textContent = categoryName;
-    elements.categoryBadge.className = 'inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full';
+    // Add animation to quiz container
+    const quizContainer = document.getElementById('quizContainer');
+    quizContainer.classList.remove('slide-in');
+    void quizContainer.offsetWidth; // Trigger reflow
+    quizContainer.classList.add('slide-in');
 
-    // Update question text
-    elements.questionText.textContent = question.text;
+    // Update category badge with colorful gradients
+    const categoryName = getCategoryName(question.categoryId);
+    const categoryColors = {
+        'Anatómia': 'from-pink-400 to-rose-500',
+        'Fyziológia': 'from-blue-400 to-indigo-500',
+        'Biochémia': 'from-green-400 to-emerald-500',
+        'Farmakológia': 'from-purple-400 to-violet-500',
+        'Patológia': 'from-orange-400 to-red-500'
+    };
+    const colorClass = categoryColors[categoryName] || 'from-pink-400 to-purple-500';
+    elements.categoryBadge.textContent = categoryName;
+    elements.categoryBadge.className = `inline-block bg-gradient-to-r ${colorClass} text-white text-sm font-bold px-6 py-2 rounded-full shadow-md`;
+
+    // Update question text with animation
+    elements.questionText.style.opacity = '0';
+    setTimeout(() => {
+        elements.questionText.textContent = question.text;
+        elements.questionText.style.transition = 'opacity 0.5s ease-in';
+        elements.questionText.style.opacity = '1';
+    }, 100);
 
     // Clear and populate answers
     elements.answersContainer.innerHTML = '';
 
-    question.answers.forEach((answer, index) => {
-        const answerElement = createAnswerElement(answer, index);
+    question.answers.forEach((answer) => {
+        const answerElement = createAnswerElement(answer);
         elements.answersContainer.appendChild(answerElement);
     });
 
@@ -172,12 +191,11 @@ function displayQuestion(question) {
 /**
  * Creates a DOM element for a single answer
  * @param {Object} answer - Answer object
- * @param {number} index - Answer index
  * @returns {HTMLElement} Answer DOM element
  */
-function createAnswerElement(answer, index) {
+function createAnswerElement(answer) {
     const div = document.createElement('div');
-    div.className = 'answer-item bg-gray-50 hover:bg-gray-100 p-4 rounded-lg transition duration-150 cursor-pointer border-2 border-transparent';
+    div.className = 'answer-item bg-gradient-to-br from-white to-blue-50 hover:from-blue-50 hover:to-purple-50 p-4 rounded-xl transition-all duration-300 cursor-pointer border-2 border-purple-200 hover:border-purple-400 hover:shadow-md';
     div.dataset.answerId = answer.id;
 
     const label = document.createElement('label');
@@ -186,12 +204,12 @@ function createAnswerElement(answer, index) {
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.id = `answer-${answer.id}`;
-    checkbox.className = 'mt-1 mr-3 h-5 w-5 text-blue-600 rounded focus:ring-2 focus:ring-blue-500 cursor-pointer';
+    checkbox.className = 'mt-1 mr-3 h-5 w-5 text-purple-600 rounded focus:ring-2 focus:ring-purple-500 cursor-pointer';
     checkbox.dataset.answerId = answer.id;
     checkbox.dataset.isCorrect = answer.isCorrect;
 
     const span = document.createElement('span');
-    span.className = 'text-gray-800 text-lg select-none flex-1';
+    span.className = 'text-gray-800 font-medium select-none flex-1';
     span.textContent = answer.text;
 
     label.appendChild(checkbox);
@@ -271,25 +289,28 @@ function validateAnswer(selected, correct) {
  * @param {NodeList} checkboxes - All answer checkboxes
  */
 function highlightAnswers(checkboxes) {
-    checkboxes.forEach(checkbox => {
+    checkboxes.forEach((checkbox, index) => {
         const answerDiv = checkbox.closest('.answer-item');
         const isCorrect = checkbox.dataset.isCorrect === 'true';
         const isChecked = checkbox.checked;
 
-        // Remove hover effect
-        answerDiv.classList.remove('hover:bg-gray-100');
+        // Remove hover effects and reset classes
+        answerDiv.classList.remove('hover:from-blue-50', 'hover:to-purple-50', 'hover:border-purple-400');
 
-        if (isCorrect) {
-            // Correct answers get green background
-            answerDiv.classList.remove('bg-gray-50');
-            answerDiv.classList.add('bg-green-100', 'border-green-500');
-            answerDiv.querySelector('span').classList.add('text-green-900', 'font-semibold');
-        } else if (isChecked) {
-            // Incorrectly selected answers get red background
-            answerDiv.classList.remove('bg-gray-50');
-            answerDiv.classList.add('bg-red-100', 'border-red-500');
-            answerDiv.querySelector('span').classList.add('text-red-900');
-        }
+        // Stagger animation for each answer
+        setTimeout(() => {
+            if (isCorrect) {
+                // Correct answers get vibrant green gradient
+                answerDiv.className = 'answer-item bg-gradient-to-r from-green-400 to-emerald-500 p-4 rounded-xl transition-all duration-300 cursor-pointer border-2 border-green-600 shadow-lg transform scale-105';
+                answerDiv.querySelector('span').className = 'text-white font-bold select-none flex-1';
+                answerDiv.querySelector('input').className = 'mt-1 mr-3 h-5 w-5 cursor-pointer';
+            } else if (isChecked) {
+                // Incorrectly selected answers get vibrant red gradient
+                answerDiv.className = 'answer-item bg-gradient-to-r from-red-400 to-pink-500 p-4 rounded-xl transition-all duration-300 cursor-pointer border-2 border-red-600 shadow-lg';
+                answerDiv.querySelector('span').className = 'text-white font-bold select-none flex-1';
+                answerDiv.querySelector('input').className = 'mt-1 mr-3 h-5 w-5 cursor-pointer';
+            }
+        }, index * 100); // Stagger by 100ms per answer
     });
 }
 
@@ -298,21 +319,32 @@ function highlightAnswers(checkboxes) {
  * @param {boolean} isCorrect - Whether the answer was correct
  */
 function showResult(isCorrect) {
-    elements.resultMessage.classList.remove('hidden');
+    // Delay showing result to allow answer highlights to animate first
+    setTimeout(() => {
+        elements.resultMessage.classList.remove('hidden');
+        elements.resultMessage.style.opacity = '0';
 
-    if (isCorrect) {
-        elements.resultMessage.className = 'mb-6 p-4 rounded-lg font-semibold text-center bg-green-100 text-green-800 border-2 border-green-500';
-        elements.resultMessage.innerHTML = `
-            <span class="text-2xl">✓</span>
-            <span class="ml-2">Correct! Well done!</span>
-        `;
-    } else {
-        elements.resultMessage.className = 'mb-6 p-4 rounded-lg font-semibold text-center bg-red-100 text-red-800 border-2 border-red-500';
-        elements.resultMessage.innerHTML = `
-            <span class="text-2xl">✗</span>
-            <span class="ml-2">Incorrect. Review the correct answers highlighted in green.</span>
-        `;
-    }
+        if (isCorrect) {
+            elements.resultMessage.className = 'mb-6 p-5 rounded-xl font-bold text-center text-lg shadow-lg bg-gradient-to-r from-green-400 to-emerald-500 text-white border-2 border-green-600';
+            elements.resultMessage.innerHTML = `
+                <span class="text-3xl">🎉</span>
+                <span class="ml-2">Správne! Výborne!</span>
+                <span class="text-3xl ml-2">✓</span>
+            `;
+        } else {
+            elements.resultMessage.className = 'mb-6 p-5 rounded-xl font-bold text-center text-lg shadow-lg bg-gradient-to-r from-orange-400 to-red-500 text-white border-2 border-red-600';
+            elements.resultMessage.innerHTML = `
+                <span class="text-3xl">💡</span>
+                <span class="ml-2">Nesprávne. Správne odpovede sú zvýraznené zelenou.</span>
+            `;
+        }
+
+        // Fade in animation
+        setTimeout(() => {
+            elements.resultMessage.style.transition = 'opacity 0.5s ease-in';
+            elements.resultMessage.style.opacity = '1';
+        }, 50);
+    }, 800); // Wait for answer highlights to finish
 }
 
 // ============================================================================

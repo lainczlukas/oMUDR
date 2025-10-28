@@ -1,68 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="MUDR Quiz - Medical university entrance exam preparation">
-    <title>MUDR Quiz - Medical Exam Preparation</title>
+    <meta name="description" content="MUDR Quiz - Príprava na prijímacie skúšky na lekársku fakultu">
+    <title>MUDR Quiz - Príprava na prijímačky</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease-out;
+        }
+
+        .slide-in {
+            animation: slideIn 0.3s ease-out;
+        }
+
+        .answer-item {
+            transition: all 0.3s ease;
+        }
+
+        .answer-item:hover {
+            transform: translateX(4px);
+        }
+
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            background-attachment: fixed;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 min-h-screen">
-    <div class="container mx-auto px-4 py-8 max-w-3xl">
+<body class="min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
         <!-- Header -->
-        <header class="text-center mb-8">
-            <h1 class="text-4xl font-bold text-blue-600 mb-2">MUDR Quiz</h1>
-            <p class="text-gray-600">Medical University Entrance Exam Preparation</p>
+        <header class="text-center mb-8 fade-in">
+            <h1 class="text-5xl font-bold text-white mb-2 drop-shadow-lg">🎓 MUDR Quiz</h1>
+            <p class="text-purple-100 text-lg">Príprava na prijímacie skúšky na lekársku fakultu</p>
         </header>
 
         <!-- Quiz Container -->
-        <main class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+        <main id="quizContainer" class="bg-gradient-to-br from-white to-purple-50 rounded-2xl shadow-2xl p-6 md:p-8 slide-in">
             <!-- Category Badge -->
-            <div class="mb-4">
-                <span id="categoryBadge" class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full">
-                    Loading...
+            <div class="mb-6">
+                <span id="categoryBadge" class="inline-block bg-gradient-to-r from-pink-400 to-purple-500 text-white text-sm font-bold px-6 py-2 rounded-full shadow-md">
+                    Načítava sa...
                 </span>
             </div>
 
             <!-- Question -->
             <div class="mb-6">
-                <h2 id="questionText" class="text-2xl font-semibold text-gray-800 leading-relaxed">
-                    Loading question...
+                <h2 id="questionText" class="text-2xl md:text-3xl font-bold text-gray-800 leading-relaxed">
+                    Načítava sa otázka...
                 </h2>
             </div>
 
-            <!-- Answers -->
-            <div id="answersContainer" class="space-y-3 mb-6">
+            <!-- Answers in Two Columns -->
+            <div id="answersContainer" class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
                 <!-- Answers will be dynamically inserted here -->
             </div>
 
             <!-- Result Message -->
-            <div id="resultMessage" class="hidden mb-6 p-4 rounded-lg font-semibold text-center" role="alert">
+            <div id="resultMessage" class="hidden mb-6 p-5 rounded-xl font-bold text-center text-lg shadow-lg" role="alert">
                 <!-- Result message will appear here -->
             </div>
 
             <!-- Action Buttons -->
-            <div class="flex flex-col sm:flex-row gap-3">
+            <div class="flex flex-col sm:flex-row gap-4">
                 <button
                     id="submitBtn"
-                    class="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
-                    aria-label="Submit your answer"
+                    class="flex-1 bg-gradient-to-r from-blue-500 to-cyan-500 hover:from-blue-600 hover:to-cyan-600 text-white font-bold py-4 px-8 rounded-xl transition duration-300 disabled:from-gray-300 disabled:to-gray-400 disabled:cursor-not-allowed focus:outline-none focus:ring-4 focus:ring-blue-300 shadow-lg transform hover:scale-105"
+                    aria-label="Odoslať odpoveď"
                 >
-                    Submit Answer
+                    ✓ Odoslať odpoveď
                 </button>
                 <button
                     id="nextBtn"
-                    class="flex-1 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 hidden focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
-                    aria-label="Load next question"
+                    class="flex-1 bg-gradient-to-r from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold py-4 px-8 rounded-xl transition duration-300 hidden focus:outline-none focus:ring-4 focus:ring-green-300 shadow-lg transform hover:scale-105"
+                    aria-label="Ďalšia otázka"
                 >
-                    Next Question
+                    → Ďalšia otázka
                 </button>
             </div>
         </main>
 
         <!-- Footer -->
-        <footer class="text-center mt-8 text-gray-500 text-sm">
-            <p>Practice makes perfect. Good luck with your studies!</p>
+        <footer class="text-center mt-8 text-purple-100 text-sm">
+            <p>✨ Cvičenie robí majstra. Veľa šťastia pri štúdiu! ✨</p>
         </footer>
     </div>
 
