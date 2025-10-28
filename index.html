@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MUDR Quiz - Medical university entrance exam preparation">
+    <title>MUDR Quiz - Medical Exam Preparation</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-3xl">
+        <!-- Header -->
+        <header class="text-center mb-8">
+            <h1 class="text-4xl font-bold text-blue-600 mb-2">MUDR Quiz</h1>
+            <p class="text-gray-600">Medical University Entrance Exam Preparation</p>
+        </header>
+
+        <!-- Quiz Container -->
+        <main class="bg-white rounded-lg shadow-lg p-6 md:p-8">
+            <!-- Category Badge -->
+            <div class="mb-4">
+                <span id="categoryBadge" class="inline-block bg-blue-100 text-blue-800 text-sm font-semibold px-4 py-2 rounded-full">
+                    Loading...
+                </span>
+            </div>
+
+            <!-- Question -->
+            <div class="mb-6">
+                <h2 id="questionText" class="text-2xl font-semibold text-gray-800 leading-relaxed">
+                    Loading question...
+                </h2>
+            </div>
+
+            <!-- Answers -->
+            <div id="answersContainer" class="space-y-3 mb-6">
+                <!-- Answers will be dynamically inserted here -->
+            </div>
+
+            <!-- Result Message -->
+            <div id="resultMessage" class="hidden mb-6 p-4 rounded-lg font-semibold text-center" role="alert">
+                <!-- Result message will appear here -->
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="flex flex-col sm:flex-row gap-3">
+                <button
+                    id="submitBtn"
+                    class="flex-1 bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 disabled:bg-gray-300 disabled:cursor-not-allowed focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                    aria-label="Submit your answer"
+                >
+                    Submit Answer
+                </button>
+                <button
+                    id="nextBtn"
+                    class="flex-1 bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg transition duration-200 hidden focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2"
+                    aria-label="Load next question"
+                >
+                    Next Question
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="text-center mt-8 text-gray-500 text-sm">
+            <p>Practice makes perfect. Good luck with your studies!</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,966 @@
+{
+  "categories": [
+    {
+      "id": 1,
+      "name": "Anatomy"
+    },
+    {
+      "id": 2,
+      "name": "Physiology"
+    },
+    {
+      "id": 3,
+      "name": "Biochemistry"
+    },
+    {
+      "id": 4,
+      "name": "Pharmacology"
+    },
+    {
+      "id": 5,
+      "name": "Pathology"
+    }
+  ],
+  "questions": [
+    {
+      "id": 1,
+      "text": "Which of the following structures are part of the human brain?",
+      "categoryId": 1,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Cerebrum",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Cerebellum",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Liver",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Medulla oblongata",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Kidney",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Pons",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Spleen",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Thalamus",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Which bones are part of the human cranium?",
+      "categoryId": 1,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Frontal bone",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Parietal bone",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Femur",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Occipital bone",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Humerus",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Temporal bone",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Tibia",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Radius",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Which structures are part of the digestive system?",
+      "categoryId": 1,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Esophagus",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Stomach",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Trachea",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Small intestine",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Bronchi",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Pancreas",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Alveoli",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Ureter",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Which structures are part of the cardiac conduction system?",
+      "categoryId": 1,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Sinoatrial node",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Atrioventricular node",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Thyroid gland",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Bundle of His",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Adrenal medulla",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Purkinje fibers",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Pituitary gland",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Pineal gland",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Which physiological processes occur during aerobic respiration?",
+      "categoryId": 2,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Glycolysis",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Krebs cycle",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Protein synthesis",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Electron transport chain",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "DNA replication",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Oxidative phosphorylation",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Cell division",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Phagocytosis",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Which hormones are secreted by the anterior pituitary gland?",
+      "categoryId": 2,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Growth hormone (GH)",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Thyroid-stimulating hormone (TSH)",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Insulin",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Adrenocorticotropic hormone (ACTH)",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Glucagon",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Prolactin",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Cortisol",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Adrenaline",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Which factors increase heart rate?",
+      "categoryId": 2,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Sympathetic nervous system activation",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Epinephrine release",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Parasympathetic stimulation",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Exercise",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Acetylcholine at SA node",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Increased body temperature",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Vagus nerve stimulation",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Sleep",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Which processes occur during muscle contraction?",
+      "categoryId": 2,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Calcium ions bind to troponin",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "ATP hydrolysis",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "DNA transcription",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Actin-myosin cross-bridge formation",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Mitosis",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Sarcomere shortening",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Glycogen synthesis",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Cholesterol production",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Which molecules are carbohydrates?",
+      "categoryId": 3,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Glucose",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Fructose",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Hemoglobin",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Glycogen",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Cholesterol",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Lactose",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Myoglobin",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Testosterone",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Which enzymes are involved in digestion?",
+      "categoryId": 3,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Amylase",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Pepsin",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "DNA polymerase",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Lipase",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "RNA polymerase",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Trypsin",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Helicase",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Ligase",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Which vitamins are fat-soluble?",
+      "categoryId": 3,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Vitamin A",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Vitamin D",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Vitamin C",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Vitamin E",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Vitamin B12",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Vitamin K",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Thiamine (B1)",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Riboflavin (B2)",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Which amino acids are essential (must be obtained from diet)?",
+      "categoryId": 3,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Leucine",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Lysine",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Alanine",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Methionine",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Glycine",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Tryptophan",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Serine",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Glutamine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Which medications are beta-blockers?",
+      "categoryId": 4,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Propranolol",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Metoprolol",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Lisinopril",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Atenolol",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Amlodipine",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Carvedilol",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Losartan",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Hydrochlorothiazide",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Which drugs are classified as NSAIDs (Non-Steroidal Anti-Inflammatory Drugs)?",
+      "categoryId": 4,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Ibuprofen",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Naproxen",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Morphine",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Diclofenac",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Codeine",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Aspirin",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Acetaminophen",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Fentanyl",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Which antibiotics belong to the penicillin class?",
+      "categoryId": 4,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Amoxicillin",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Ampicillin",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Ciprofloxacin",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Penicillin G",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Azithromycin",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Nafcillin",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Doxycycline",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Vancomycin",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Which medications are ACE inhibitors (Angiotensin-Converting Enzyme inhibitors)?",
+      "categoryId": 4,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Enalapril",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Lisinopril",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Losartan",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Ramipril",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Valsartan",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Captopril",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Metoprolol",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Amlodipine",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Which conditions are autoimmune diseases?",
+      "categoryId": 5,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Rheumatoid arthritis",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Type 1 diabetes",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Pneumonia",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Multiple sclerosis",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Tuberculosis",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Systemic lupus erythematosus",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Influenza",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Malaria",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Which pathogens are viruses?",
+      "categoryId": 5,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Influenza virus",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "HIV",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Streptococcus pneumoniae",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Hepatitis B virus",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Escherichia coli",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "SARS-CoV-2",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Mycobacterium tuberculosis",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Candida albicans",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Which findings are characteristic of inflammatory response?",
+      "categoryId": 5,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Increased vascular permeability",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Vasodilation",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Decreased blood flow",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Leukocyte migration",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Tissue calcification",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Release of chemical mediators",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Cell atrophy",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Fibrosis",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Which types of necrosis exist in pathology?",
+      "categoryId": 5,
+      "answers": [
+        {
+          "id": 1,
+          "text": "Coagulative necrosis",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "Liquefactive necrosis",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "Hyperplastic necrosis",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "Caseous necrosis",
+          "isCorrect": true
+        },
+        {
+          "id": 5,
+          "text": "Metaplastic necrosis",
+          "isCorrect": false
+        },
+        {
+          "id": 6,
+          "text": "Fat necrosis",
+          "isCorrect": true
+        },
+        {
+          "id": 7,
+          "text": "Dysplastic necrosis",
+          "isCorrect": false
+        },
+        {
+          "id": 8,
+          "text": "Atrophic necrosis",
+          "isCorrect": false
+        }
+      ]
+    }
+  ]
+}
